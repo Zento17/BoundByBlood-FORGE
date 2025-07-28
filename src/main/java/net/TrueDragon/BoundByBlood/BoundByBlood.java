@@ -1,7 +1,11 @@
 package net.TrueDragon.BoundByBlood;
 
 import com.mojang.logging.LogUtils;
+import net.TrueDragon.BoundByBlood.item.Items;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.common.CreativeModeTabRegistry;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,9 +30,11 @@ public class BoundByBlood
     public BoundByBlood(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
-
-        // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+        MinecraftForge.EVENT_BUS.register(this);
+
+        Items.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
@@ -36,14 +42,14 @@ public class BoundByBlood
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
-
-    }
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        }
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(Items.OLD_BONE);
+        }
 
     }
 
