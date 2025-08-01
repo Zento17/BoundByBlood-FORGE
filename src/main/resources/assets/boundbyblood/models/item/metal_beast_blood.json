@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "boundbyblood:item/metal_beast_blood"
+  }
+}

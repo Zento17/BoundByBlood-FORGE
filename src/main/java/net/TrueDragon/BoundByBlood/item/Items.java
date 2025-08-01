@@ -9,14 +9,31 @@ import net.minecraftforge.registries.RegistryObject;
 
 
 public class Items {
-    public static final DeferredRegister<Item> Items =
+    public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, BoundByBlood.MOD_ID);
 
-    public static final RegistryObject<Item> OLD_BONE = Items.register("old_bone",
+    public static final RegistryObject<Item> OLD_BONE = ITEMS.register("old_bone",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MORTAR_AND_PESTLE = ITEMS.register("mortar_and_pestle",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLOOD_CRYSTAL = ITEMS.register("blood_crystal",
+        () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WATER_BEAST_BLOOD = ITEMS.register("water_beast_blood",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FIRE_BEAST_BLOOD = ITEMS.register("fire_beast_blood",
+            () -> new Item(new Item.Properties()));
+    public  static final RegistryObject<Item> EARTH_BEAST_BLOOD = ITEMS.register("earth_beast_blood",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WOOD_BEAST_BLOOD = ITEMS.register("wood_beast_blood",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAL_BEAST_BLOOD = ITEMS.register("metal_beast_blood",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BEAST_BLOOD = ITEMS.register("beast_blood",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
-        Items.register(eventBus);
+        ITEMS.register(eventBus);
     }
 
 }

@@ -1,3 +1,17 @@
 {
-  "item.boundbyblood.old_bone": "Old Bone"
+  "item.boundbyblood.old_bone": "Old Bone",
+  "item.boundbyblood.mortar_and_pestle": "Mortar and Pestle",
+  "item.boundbyblood.blood_crystal": "Blood Crystal",
+  "item.boundbyblood.water_beast_blood": "Water Beast Blood",
+  "item.boundbyblood.fire_beast_blood": "Fire Beast Blood",
+  "item.boundbyblood.earth_beast_blood": "Earth Beast Blood",
+  "item.boundbyblood.wood_beast_blood": "Wood Beast Blood",
+  "item.boundbyblood.metal_beast_blood": "Metal Beast Blood",
+  "item.boundbyblood.beast_blood": "Beast Blood",
+
+
+  "block.boundbyblood.sanguicite": "Sanguicite",
+
+  "creativetab.boundbyblood.boundbyblood_items": "Bound By Blood Items",
+  "creativetab.bounbyblood.sanguicite_blocks": "Sanguicite Blocks"
 }

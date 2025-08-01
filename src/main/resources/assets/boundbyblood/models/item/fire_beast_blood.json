@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "boundbyblood:item/fire_beast_blood"
+  }
+}

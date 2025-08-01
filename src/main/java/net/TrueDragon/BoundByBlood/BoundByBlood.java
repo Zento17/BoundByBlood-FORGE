@@ -1,10 +1,10 @@
 package net.TrueDragon.BoundByBlood;
 
 import com.mojang.logging.LogUtils;
+import net.TrueDragon.BoundByBlood.block.Blocks;
 import net.TrueDragon.BoundByBlood.item.Items;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.common.CreativeModeTabRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -34,7 +34,10 @@ public class BoundByBlood
 
         MinecraftForge.EVENT_BUS.register(this);
 
+        net.TrueDragon.BoundByBlood.item.CreativeModeTabs.register(modEventBus);
+
         Items.register(modEventBus);
+        Blocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
@@ -49,8 +52,21 @@ public class BoundByBlood
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Items.OLD_BONE);
+            event.accept(Items.MORTAR_AND_PESTLE);
+            event.accept(Items.BLOOD_CRYSTAL);
+            event.accept(Items.BEAST_BLOOD);
+            event.accept(Items.EARTH_BEAST_BLOOD);
+            event.accept(Items.FIRE_BEAST_BLOOD);
+            event.accept(Items.METAL_BEAST_BLOOD);
+            event.accept(Items.WATER_BEAST_BLOOD);
+            event.accept(Items.WOOD_BEAST_BLOOD);
+
         }
 
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(Blocks.SANGUICITE);
+
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
