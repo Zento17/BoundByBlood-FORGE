@@ -20,6 +20,22 @@ public class CreativeModeTabs {
                     .title(Component.translatable("creativetab.boundbyblood.boundbyblood_items"))
                     .displayItems((itemsDisplayParameters, output) -> {
                         output.accept(Items.BLOOD_CRYSTAL.get());
+                        output.accept(Items.BLOOD_CRYSTAL_TIER_2.get());
+                        output.accept(Items.DEMONIC_BLOOD_CRYSTAL.get());
+                        output.accept(Items.DEMONIC_BLOOD_CRYSTAL_TIER_2.get());
+                        output.accept(Items.REFINED_BEAST_BLOOD_POWDER.get());
+                        output.accept(Items.BEAST_BLOOD_POWDER.get());
+                        output.accept(Items.BEAST_BLOOD.get());
+                        output.accept(Items.REFINED_BEAST_BLOOD.get());
+                        output.accept(Items.EARTH_BEAST_BLOOD.get());
+                        output.accept(Items.WATER_BEAST_BLOOD.get());
+                        output.accept(Items.FIRE_BEAST_BLOOD.get());
+                        output.accept(Items.METAL_BEAST_BLOOD.get());
+                        output.accept(Items.WOOD_BEAST_BLOOD.get());
+                        output.accept(Items.OLD_BONE.get());
+                        output.accept(Items.BEAST_BONE.get());
+                        output.accept(Items.BEAST_CORE.get());
+                        output.accept(Items.MORTAR_AND_PESTLE.get());
 
 
                     }).build());

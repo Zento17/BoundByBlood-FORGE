@@ -31,6 +31,24 @@ public class Items {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BEAST_BLOOD = ITEMS.register("beast_blood",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLOOD_CRYSTAL_TIER_2 = ITEMS.register("blood_crystal_tier_2",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DEMONIC_BLOOD_CRYSTAL_TIER_2 = ITEMS.register("demonic_blood_crystal_tier_2",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BEAST_CORE = ITEMS.register("beast_core",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DEMONIC_BLOOD_CRYSTAL = ITEMS.register("demonic_blood_crystal",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BEAST_BONE = ITEMS.register("beast_bone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REFINED_BEAST_BLOOD = ITEMS.register("refined_beast_blood",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REFINED_BEAST_BLOOD_POWDER = ITEMS.register("refined_beast_blood_powder",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BEAST_BLOOD_POWDER = ITEMS.register("beast_blood_powder",
+            () -> new Item(new Item.Properties()));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

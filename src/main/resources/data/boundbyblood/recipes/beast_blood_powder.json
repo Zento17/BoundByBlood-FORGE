@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "boundbyblood:beast_bone" },
+    { "item": "boundbyblood:mortar_and_pestle" },
+    { "item": "boundbyblood:blood_crystal" }
+  ],
+  "result": {
+    "count": 1,
+    "item": "boundbyblood:beast_blood_powder"
+  }
+}

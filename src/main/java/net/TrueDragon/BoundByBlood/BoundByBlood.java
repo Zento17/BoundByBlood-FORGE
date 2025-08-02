@@ -52,14 +52,6 @@ public class BoundByBlood
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Items.OLD_BONE);
-            event.accept(Items.MORTAR_AND_PESTLE);
-            event.accept(Items.BLOOD_CRYSTAL);
-            event.accept(Items.BEAST_BLOOD);
-            event.accept(Items.EARTH_BEAST_BLOOD);
-            event.accept(Items.FIRE_BEAST_BLOOD);
-            event.accept(Items.METAL_BEAST_BLOOD);
-            event.accept(Items.WATER_BEAST_BLOOD);
-            event.accept(Items.WOOD_BEAST_BLOOD);
 
         }
 

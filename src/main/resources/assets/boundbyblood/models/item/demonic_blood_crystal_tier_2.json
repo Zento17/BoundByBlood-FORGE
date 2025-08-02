@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "boundbyblood:item/demonic_blood_crystal_tier_2"
+  }
+}
