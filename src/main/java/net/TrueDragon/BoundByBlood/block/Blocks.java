@@ -33,6 +33,14 @@ public class Blocks {
                             .sound(SoundType.STONE),
                     UniformInt.of(2, 4)
             ));
+    public static final RegistryObject<Block> DEEPSLATE_GRAVEVEINIUM_ORE = registerBlock("deepslate_graveveinium_ore",
+            () -> new DropExperienceBlock(
+                    BlockBehaviour.Properties.of()
+                            .strength(5f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.DEEPSLATE),
+                    UniformInt.of(3, 6)
+            ));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

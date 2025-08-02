@@ -51,7 +51,7 @@ public class BoundByBlood
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Items.OLD_BONE);
+            event.accept(Items.OLD_BEAST_BONE);
 
         }
 

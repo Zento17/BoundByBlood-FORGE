@@ -12,7 +12,7 @@ public class Items {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, BoundByBlood.MOD_ID);
 
-    public static final RegistryObject<Item> OLD_BONE = ITEMS.register("old_bone",
+    public static final RegistryObject<Item> OLD_BEAST_BONE = ITEMS.register("old_beast_bone",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> MORTAR_AND_PESTLE = ITEMS.register("mortar_and_pestle",
@@ -46,6 +46,8 @@ public class Items {
     public static final RegistryObject<Item> REFINED_BEAST_BLOOD_POWDER = ITEMS.register("refined_beast_blood_powder",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BEAST_BLOOD_POWDER = ITEMS.register("beast_blood_powder",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BEAST_SOUL = ITEMS.register("beast_soul",
             () -> new Item(new Item.Properties()));
 
 

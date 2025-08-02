@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "ingredient": {
+    "item": "boundbyblood:beast_blood_powder"
+  },
+  "result": {
+    "item": "boundbyblood:refined_beast_blood_powder"
+  }
+}

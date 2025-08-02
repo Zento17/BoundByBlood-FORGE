@@ -1,5 +1,5 @@
 {
-  "item.boundbyblood.old_bone": "Old Bone",
+  "item.boundbyblood.old_beast_bone": "Old Beast Bone",
   "item.boundbyblood.mortar_and_pestle": "Mortar and Pestle",
   "item.boundbyblood.blood_crystal": "Blood Crystal",
   "item.boundbyblood.water_beast_blood": "Water Beast Blood",
@@ -16,10 +16,13 @@
   "item.boundbyblood.refined_beast_blood": "Refined Beast Blood",
   "item.boundbyblood.beast_blood_powder": "Beast Blood Powder",
   "item.boundbyblood.refined_beast_blood_powder": "Refined Beast Blood Powder",
+  "item.boundbyblood.beast_soul": "Beast Soul",
 
 
 
   "block.boundbyblood.sanguicite": "Sanguicite",
+ "block.boundbyblood.graveveinium_ore": "Gravevienium Ore",
+ "block.boundbyblood.deepslate_graveveinium_ore": "Graveveinium Deepslate Ore",
 
   "creativetab.boundbyblood.boundbyblood_items": "Bound By Blood Items",
   "creativetab.bounbyblood.sanguicite_blocks": "Sanguicite Blocks"

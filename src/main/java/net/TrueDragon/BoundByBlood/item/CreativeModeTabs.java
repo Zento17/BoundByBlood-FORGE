@@ -32,10 +32,12 @@ public class CreativeModeTabs {
                         output.accept(Items.FIRE_BEAST_BLOOD.get());
                         output.accept(Items.METAL_BEAST_BLOOD.get());
                         output.accept(Items.WOOD_BEAST_BLOOD.get());
-                        output.accept(Items.OLD_BONE.get());
+                        output.accept(Items.OLD_BEAST_BONE.get());
                         output.accept(Items.BEAST_BONE.get());
                         output.accept(Items.BEAST_CORE.get());
                         output.accept(Items.MORTAR_AND_PESTLE.get());
+                        output.accept(Items.BEAST_SOUL.get());
+
 
 
                     }).build());
@@ -46,6 +48,8 @@ public class CreativeModeTabs {
                     .title(Component.translatable("creativetab.bounbyblood.sanguicite_blocks"))
                     .displayItems((itemsDisplayParameters, output) -> {
                         output.accept(Blocks.SANGUICITE.get());
+                        output.accept(Blocks.DEEPSLATE_GRAVEVEINIUM_ORE.get());
+                        output.accept(Blocks.GRAVEVEINIUM_ORE.get());
 
 
                     }).build());
